@@ -33,16 +33,19 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-# Virtualenv
+# Virtualenv (root only — avoids ignoring project dirs like resources/lib/)
 .Python
-[Bb]in
-[Ii]nclude
-[Ll]ib
-[Ll]ib64
-[Ll]ocal
-[Ss]cripts
+/[Bb]in/
+/[Ii]nclude/
+/[Ll]ib/
+/[Ll]ib64/
+/[Ll]ocal/
+/[Ss]cripts/
 pyvenv.cfg
-.venv
+.venv/
+venv/
+env/
+ENV/
 pip-selfcheck.json
 
 *.swp
