@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.topradio.be" name="TOPradio" version="0.0.1" provider-name="Studio JW">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="nl_NL">TOPradio live video en radiozenders</summary>
+        <description lang="nl_NL">Speel de live videostream en alle beschikbare TOPradio-audiostations rechtstreeks af in Kodi.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://topradio.be/</source>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <screenshot>resources/media/screenshot01.jpg</screenshot>
+            <screenshot>resources/media/screenshot02.jpg</screenshot>
+            <screenshot>resources/media/screenshot03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
