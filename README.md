@@ -1,3 +1,6 @@
+[![GitHub release](https://img.shields.io/github/release/studiojw/plugin.video.topradio.be.svg)](https://github.com/studiojw/plugin.video.topradio.be/releases)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
+
 # TOPradio Kodi Add-on
 
 **plugin.video.topradio.be** is an unofficial [Kodi](https://kodi.tv/) add-on that enables you to watch and listen to all live [TOPradio](https://topradio.be/) streams directly from your Kodi media center.
