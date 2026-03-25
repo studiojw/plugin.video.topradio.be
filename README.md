@@ -13,7 +13,7 @@ Whether you’re tuning in for music, live shows, or video streams, this add-on 
 
 ## Installation
 
-1. Download the latest release of the add-on (ZIP file)
+1. Download the latest release of the add-on (ZIP file) from the [Releases page](https://github.com/studiojw/plugin.video.topradio.be/releases/latest)
 2. Open Kodi
 3. Go to **Add-ons**
 4. Select **Install from ZIP file**
