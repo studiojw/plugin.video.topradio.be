@@ -14,16 +14,20 @@ ROOT_DIR  := $(ADDON_ID)
 
 RSYNC_EXCLUDES := \
 	--exclude='.git' \
+	--exclude='.github' \
 	--exclude='.venv' \
 	--exclude='.vscode' \
+	--exclude='.pytest_cache' \
 	--exclude='__pycache__' \
 	--exclude='*.pyc' \
 	--exclude='*.pyo' \
 	--exclude='*.DS_Store' \
 	--exclude='Makefile' \
+	--exclude='pytest.ini' \
+	--exclude='tests' \
 	--exclude='$(BUILD_DIR)'
 
-.PHONY: all build clean info
+.PHONY: all build clean info test
 
 all: build
 
@@ -45,3 +49,7 @@ info:
 	@echo "Addon-id : $(ADDON_ID)"
 	@echo "Version  : $(ADDON_VERSION)"
 	@echo "Zip-name : $(ZIP_NAME)"
+
+# Skip globally installed pytest entrypoint plugins (can break unrelated projects).
+test:
+	PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest tests/ -v
