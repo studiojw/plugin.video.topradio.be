@@ -165,13 +165,13 @@ def show_root_menu():
     for station in get_station_entries():
         title = station["title"]
         subtitle = station["subtitle"]
+        description = station["description"]
 
         label = title
-        plot = title
+        plot = "[B]{0}[/B]\n{1}".format(title, description)
 
         if subtitle:
             label = "[B]{0}[/B] - {1}".format(title, subtitle)
-            plot = "[B]{0}[/B]\n{1}".format(title, subtitle)
         art = {
             "thumb": station["logo"],
             "icon": station["logo"],
